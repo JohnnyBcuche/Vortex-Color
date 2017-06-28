@@ -9,29 +9,30 @@
 }
 #linkToFarbara>*{
 	height: 100vh;
-	width: 70px;
+	width: 50px;
 	display: flex;
 	align-items: center;
 }
 #linkToFarbara>*:hover{
-	background-color: rgba(0,0,0,.2);
-}
-#linkToFarbara{
-	text-decoration: none;
-}
-.rotate {
-	height: 10px;
-	transform: rotate(90deg);
-
+	background: linear-gradient( -90deg, rgba(0,0,0,.4), rgba(190,190,190,.1) );
 }
 
 #header{
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	min-width: 100%;
 }
+#header>*{
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 #content{
-	min-width: 90%;
+	min-width: 80%;
+    overflow:hidden;
 }
 #about{
 	margin-top: 50px;
