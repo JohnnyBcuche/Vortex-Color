@@ -14,4 +14,21 @@
 	width: 400px;
 	height: 400px;
 	text-align: center;
+	text-decoration: none;
+	color: red;
+	font-family: "Courier New", Courier, monospace;
+}
+.usluge{
+	animation: jumpleft 1s linear;
+}
+.farbara{
+	animation: jumpright 1s linear;
+}
+@keyframes jumpleft{
+	from{ margin: 0 0 0 -600px; }
+	to{ margin: 0; }
+}
+@keyframes jumpright{
+	from{ margin: 0 -600px 0 0 ; }
+	to{ margin: 0; }
 }
