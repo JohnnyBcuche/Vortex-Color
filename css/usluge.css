@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 #usluge{
 	display: flex;
 	justify-content: space-between;
@@ -12,11 +13,16 @@
 	width: 50px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 #linkToFarbara>*:hover{
 	background: linear-gradient( -90deg, rgba(0,0,0,.4), rgba(190,190,190,.1) );
 }
-
+.sidebar{
+	margin-left: calc(100% - 50px);
+	float: right;
+	position: fixed;
+}
 #header{
 	display: flex;
 	flex-wrap: wrap;
@@ -31,8 +37,8 @@
 	justify-content: center;
 }
 #content{
-	min-width: 80%;
-    overflow:hidden;
+	min-width: 90%;
+	margin-right: 40px;
 }
 #about{
 	margin-top: 50px;
