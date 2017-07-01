@@ -40,3 +40,32 @@
 	from{ margin: 0 0 -1200px 0px;}
 	to{ margin: 0;}
 }
+
+@media only screen and (max-width:950px){
+
+}
+
+@media only screen and (max-width:600px) {
+#home{
+	height: 100vh;
+	overflow: auto;
+	flex-wrap: wrap-reverse;
+}
+#home *{
+	width: 150px;
+	height: 150px;
+	font-size: 20px;
+}
+.usluge{
+	margin-top: 50px;
+	order: 1;
+}
+.logo{
+	margin-top: 25px;
+	order: 3;
+}
+.farbara{
+	margin-top: 50px;
+	order: 2;
+}
+}
