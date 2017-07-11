@@ -3,22 +3,25 @@
 	padding: 0;
 }
 #home{
-	height: 100vh;
+	height: auto;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
 	overflow: hidden;
-}
-#home *{
-	width: 400px;
-	height: 400px;
 	text-align: center;
-	text-decoration: none;
-	color: red;
 	font-family: "Courier New", Courier, monospace;
 }
-.usluge{
+.logo{
+	height: auto;
+	width: 100%;
+	margin: 50px 20px 50px 20px;
+}
+.usluge a, .farbara a{
+	text-decoration: none;
+	color: red;
+}
+/*.usluge{
 	animation: jumpleft 1s linear;
 }
 .farbara{
@@ -39,33 +42,63 @@
 @keyframes popUp{
 	from{ margin: 0 0 -1200px 0px;}
 	to{ margin: 0;}
+}*/
+footer{
+	width: 100%;
+	height: auto;
+	background-color: #8a8a5c;
+}
+footer p{
+	text-align: center;
+	font-weight: bold;
+	padding: 30px;
+	color: white;
+}
+.contact-icon{
+	height: auto;
+	min-width: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	margin-top: 40px;
+}
+.contact-icon img{
+	height: auto;
+	width: 40px;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.contact-icon p{
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+.contact:hover{
+	opacity: .8;
+}
+.contact a{
+	text-decoration: none;
+}
+.line{
+	height: 3px;
+	width: 95%;
+	margin: 0 2.5% 0 2.5%;
+	background-color: #d6d6c2;
 }
 
-@media only screen and (max-width:950px){
+@media only screen and (min-width:950px){
 
 }
 
-@media only screen and (max-width:600px) {
-#home{
-	height: 100vh;
-	overflow: auto;
-	flex-wrap: wrap-reverse;
+@media only screen and (min-width:600px) {
+.contact-icon img{
+	width: 60px;
+	padding: 10px;
+	margin-bottom: 10px;
 }
-#home *{
-	width: 150px;
-	height: 150px;
-	font-size: 20px;
-}
-.usluge{
-	margin-top: 50px;
-	order: 1;
-}
-.logo{
-	margin-top: 25px;
-	order: 3;
-}
-.farbara{
-	margin-top: 50px;
-	order: 2;
+.contact-icon p{
+	font-size: 17px;
 }
 }

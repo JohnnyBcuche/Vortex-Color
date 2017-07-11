@@ -37,10 +37,42 @@
 	justify-content: center;
 }
 #content{
-	min-width: 90%;
-	margin-right: 40px;
+	min-width: 100%;
 }
 #about{
 	margin-top: 50px;
 	padding: 15px;
+}
+.o-uslugama{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.o-uslugama ul{
+	height: 40px;
+	width: 90%;
+	margin: 40px 5% 100px 5%;
+	list-style-type: none;
+}
+.o-uslugama li{
+	font-size: 30px;
+	color: #999999;
+	background-color: #ffffff;
+	border-bottom: 1px solid black;
+	transition: font-size 0.3s ease-in-out , background-color 0.3s ease-in-out;
+}
+.o-uslugama a{
+	text-decoration: none;
+}
+.o-uslugama a li:hover{
+  font-size: 33px;
+  background: #f6f6f6;
+}
+
+@media only screen and (min-width:950px){
+
+}
+
+@media only screen and (min-width:600px){
+
 }
