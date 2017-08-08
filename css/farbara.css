@@ -39,8 +39,19 @@
 	min-width: 100%;
 }
 #about{
-	margin-top: 50px;
+	height: auto;
+	width: 85%;
+	margin: 50px 7.5%;
 	padding: 15px;
+}
+#about p{
+	font-size: 18px;
+	text-align: justify;
+	line-height: 1.4em;
+}
+#about h3{
+	font-size: 24;
+	font-weight: bold;
 }
 #google-map{
 	display: flex;
