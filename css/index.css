@@ -11,50 +11,51 @@
 	justify-content: space-around;
 	overflow: hidden;
 	text-align: center;
-	font-family: "Courier New", Courier, monospace;
+	min-width: 85%;
+	margin: 40px 7.5% 0 7.5%;
 }
 #logo img{
 	height: 380px;
 	width: 100%;
 }
 .wrapper{
-  margin: 0.8em 0 2em 0;
+  margin: 12px 0 30px 0;
 }
-a,a:visited,a:hover,a:active{
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-	position:relative;
-  	transition:0.5s color ease;
-	text-decoration:none;
-	color:#1a1a1a;
-	font-size:1.5em;
+a, a:visited, a:hover, a:active{
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+	position: relative;
+  	transition: 0.5s color ease;
+	text-decoration: none;
+	color: #000000;
+	font-size: 24px;
 	font-family: Arial, Helvetica, sans-serif;
 }
-a.before:before,a.after:after{
+a.before:before, a.after:after{
   content: "";
-  transition:0.5s all ease;
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-  position:absolute;
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
 }
 a.before:before{
-  top:-0.25em;
+  top: -4px;
 }
 a.after:after{
-  bottom:-0.25em;
+  bottom: -4px;
 }
-a.before:before,a.after:after{
-  height:3px;
-  width:0;
-  background:#c02635;
+a.before:before, a.after:after{
+  height: 3px;
+  width: 0;
+  background:#b5171a;
 }
-a.link:before,a.link:after{
-  left:50%;
-  -webkit-transform:translateX(-50%);
-          transform:translateX(-50%);
+a.link:before, a.link:after{
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
-a.before:hover:before,a.after:hover:after{
-  width:110%;
+a.before:hover:before ,a.after:hover:after{
+  width: 110%;
 }
 footer{
 	width: 100%;
@@ -81,17 +82,14 @@ footer p{
 .contact-icon img{
 	height: auto;
 	width: 40px;
-	padding: 10px;
-	margin-bottom: 5px;
+	padding: 2px;
+	margin: 0 0 0 5px;
 }
 .contact-icon p{
 	font-size: 12px;
 	font-weight: bold;
 	color: white;
 	text-decoration: none;
-}
-.contact:hover{
-	opacity: .8;
 }
 .contact a{
 	text-decoration: none;
@@ -108,6 +106,9 @@ footer p{
 }
 
 @media only screen and (min-width:600px) {
+#home{
+	margin: -40px 7.5% 0 7.5%;
+}
 #logo img{
 	height: 580px;
 	width: 100%;
@@ -117,6 +118,9 @@ a,a:visited,a:hover,a:active{
 }
 a.before:before,a.after:after{
   height:5px;
+}
+footer p{
+	font-size: 14px;
 }
 .contact-icon img{
 	width: 60px;
