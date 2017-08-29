@@ -24,21 +24,24 @@
 #header{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	min-width: 100%;
 }
-#header>*{
+/*#header>*{
 	min-width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 25px;
-}
+}*/
 #content{
 	height: auto;
 	margin: 40px 7.5% 0 7.5%;
 	min-width: 85%;
+}
+#content h1{
+	text-align: center;
 }
 #about{
 	height: auto;
@@ -61,12 +64,31 @@
 	color: #b5171a;
 	cursor: pointer;
 }
-.google-map{
-	width: auto;
-	height: auto;
+.display-flex{
+	margin: 2% 0;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+}
+.google-map, .pdfLink{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.pdfLink img{
+	width: 60%;
+	margin: 0 20%;
+	height: auto;	
+}
+.pdfLink h3{
+	text-align: center;
+	font-weight: bold;
+}
+.google-map iframe{
+	width: 90%;
+	height: 250px;
+	padding: 0 5%;
+	align-items: center;
 }
 
 @media only screen and (min-width:950px){
@@ -79,11 +101,20 @@
 	margin: -40px 7.5% 0 7.5%;
 	min-width: 85%;
 }
+#content h1{
+	margin: 45px 0 -10px 0;
+}
 #about p{
 	font-size: 18px;
 	line-height: 22px;
 }
 .read-more-link, .show-less-link{
 	font-size: 18px;
+}
+.google-map, .pdfLink{
+	width: 45%;
+}
+.google-map iframe{
+	height: 90%;
 }
 }

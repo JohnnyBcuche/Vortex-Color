@@ -10,33 +10,46 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-	<div id="farbara">
-	
-	<div class="sidebar">
-	<a href="usluge.html" id="linkToUsluge">
-	<div>
-	<img src="img/Usluge.PNG" alt="usluge" width="50px" height="130px">
-	</div>
-	</a>
-	</div>
-	<div id="content">
 	<div id="header">
 	<div id="logo">
 		<a href="index.html">
 			<img src="img/VortexColorLogo.jpg" alt="">
 		</a>
 	</div>
-		<h1>Farbara</h1>
+	<div class="wrapper">
+		<a class="link before after" href="usluge.html">USLUGE</a>
 	</div>
+	
+	<div class="wrapper">
+		<a class="link before after" href="farbara.html">FARBARA</a>
+	</div>
+	</div>
+
+	<div id="farbara">
+	
+	<!-- <div class="sidebar">
+	<a href="usluge.html" id="linkToUsluge">
+	<div>
+	<img src="img/Usluge.PNG" alt="usluge" width="50px" height="130px">
+	</div>
+	</a>
+	</div> -->
+	<div id="content">
+	
+	<h1>Farbara</h1>
+
 	<div id="about" class="more-less">
 		<h3>O nama</h3>
 		<br>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, qui, excepturi? Illum consequuntur saepe esse magni voluptates vel ratione earum minima numquam, quaerat, tenetur ullam id assumenda atque quidem aliquam velit dolorum, in quis. Cumque reiciendis, cupiditate dolor neque id dolore nesciunt adipisci, vitae assumenda provident harum aliquid. Maiores dolor aliquam impedit illum vel reprehenderit dolores ipsa quidem in, quis magni nam sequi accusantium delectus illo odit qui dignissimos. Alias earum repellendus ipsam numquam, accusamus a aspernatur excepturi, qui voluptates eligendi dolore quidem? Magni laudantium ipsam obcaecati earum saepe in libero corporis iure est vero accusantium et consequuntur odit consequatur pariatur tempora sit molestiae, illum possimus molestias quisquam eligendi alias eaque, consectetur. Facilis dignissimos eos amet fugit perferendis provident illum rerum et quis asperiores, nesciunt tempora! Omnis facere excepturi ea inventore, quidem libero neque. Quos dignissimos, nostrum impedit, saepe at perferendis eos architecto ipsam, commodi modi hic doloremque deleniti aut odio quis. Hic quo neque iste dolores esse aut repellendus animi tenetur assumenda, magnam asperiores eaque fugiat modi ipsa. Sed, quam nisi aliquid saepe, aliquam vero possimus consequatur. Id iusto consectetur eius expedita voluptatibus, hic provident nisi enim doloremque. Doloribus expedita repellendus rerum accusantium quos, enim unde iste perspiciatis, necessitatibus similique nesciunt quibusdam fugiat. Nemo deleniti repellat, dolorum eaque voluptatem eos voluptas tempora eligendi animi facere quod voluptates esse tenetur. Vitae doloribus dolorem omnis optio porro tempore ea a, maxime. Est vitae mollitia ipsam aspernatur reiciendis, porro facilis eveniet pariatur ad ullam ea tenetur quibusdam necessitatibus saepe iure sequi ipsa, maiores voluptas veniam sunt corporis minus in debitis. Nostrum, quasi officia dolorum, mollitia, reprehenderit minima itaque cumque veritatis vel iure sint repellat repellendus.</p>
 	</div>
+	<div class="display-flex">
 		<div class="google-map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5586.476529137869!2d19.423433!3d45.565647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b589b13cf1bc5%3A0xfd2e912284cbb!2sMar%C5%A1ala+Tita+103%2C+Ruski+Krstur%2C+Serbia!5e0!3m2!1sen!2srs!4v1502267625385" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11172.953058275738!2d19.42044!3d45.565647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b589b13cf1bc5%3A0xfd2e912284cbb!2sMar%C5%A1ala+Tita+103%2C+Ruski+Krstur%2C+Serbia!5e0!3m2!1sen!2srs!4v1504010621435" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 	
+		<div class="pdfLink"><a href="PDF.html" target="_blank"><img src="img/pdf.png" alt="pdf"></a><h3>Spisak artikala u radnji</h3></div>
+	</div>
 	</div>
 	</div>
 
@@ -75,8 +88,8 @@
 					$(this).parent(".more-less").html(readMoreHtml.substr(0, 500)).append("<div class='read-more-link'> Show more</div>")
 				});
 			});
-    }
-});
+		    }
+		});
 			
 		
 	</script>

@@ -26,21 +26,24 @@
 #header{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	min-width: 100%;
 }
-#header>*{
+/*#header>*{
 	min-width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 25px;
-}
+}*/
 #content{
 	height: auto;
 	margin: 40px 7.5% 0 7.5%;
 	min-width: 85%;
+}
+#content h1{
+	text-align: center;
 }
 #about{
 	height: auto;
@@ -66,23 +69,22 @@
 	padding: 15px;
 	border-bottom: 1px solid black;
 }
-.about-services h1{
+.about-services h2{
 	font-size: 22px;
 	font-weight: bold;
 	cursor: pointer;
-	color: #6b6b47;
-	background-color: #ffffff;
+	color: #282828;
 	transition: font-size 0.3s ease-in-out , background-color 0.3s ease-in-out;
 }
 .about-services h1:hover{
 	font-size: 25px;
-	color: #999966;
+	color: #585755;
 }
 .about-services p{
 	display: none;
 	margin: 20px 0;
 	font-size: 14px;
-	color: #3d3d29;
+	color: #585755;
 	text-align: justify;
 	line-height: 22px;
 }
@@ -96,6 +98,9 @@
 	height: auto;
 	margin: -40px 7.5% 0 7.5%;
 	min-width: 85%;
+}
+#content h1{
+	margin: 45px 0 -10px 0;
 }
 #about p{
 	font-size: 18px;
