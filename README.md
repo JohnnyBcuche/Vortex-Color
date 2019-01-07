@@ -1,4 +1,4 @@
 # VortexColor
 
 github pages
-https://nikolamand.github.io/VortexColor/
+https://johnnybcuche.github.io/Vortex-Color/
